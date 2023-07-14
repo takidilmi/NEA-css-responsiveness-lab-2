@@ -1,0 +1,184 @@
+footer {
+    display: grid;
+    width: 97%;
+    background-color: #21325B;
+    color: white;
+    padding: 30px;
+}
+.footer-content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns:  repeat(auto-fill, minmax(270px, 1fr));
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative;    
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
+    }
+    .bubble {
+        display: grid;    
+        align-items: center;
+        width: 190px;        
+    }    
+}
+/* mobile */
+@media (max-width: 600px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .bubble {
+        display: grid;
+        grid-template-columns: auto auto;    
+        align-items: center;
+        width: 190px;        
+    }    
+}
+/* DONE*/
+
+.footer-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+.footer-content a {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    text-align: left;
+}
+.footer-content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: lightblue;
+}
+.footer-content a:visited {
+    color: inherit;
+}
+.footer-content a:hover {
+    color: blue;
+}
+.contact .icons {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;    
+}
+
+
+.contact .logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: xx-large;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: left;
+}
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+@media (min-width: 1025px) {
+    .footer-content {
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    }
+    .bubble {
+        display: grid;
+        grid-template-columns: auto auto;    
+        align-items: center;
+        width: 190px;        
+    }
+    .contact img {
+        justify-self: start;
+        margin-right: -20px;
+    }
+    .contact p {
+        margin-left: -20px;
+}
+}
+
+.bubble .p {    
+    text-align: center;
+    color: black !important;   
+    width:90px;
+    background-color: #F5CA99;    
+    padding: 5px;
+    border-radius: 10px;
+    border: none;    
+}
+
+.footer-content2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.info a:hover {
+    color: blue;
+}
+
+.info a:visited {
+    color: inherit;
+}
+
+.language-bar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.language-bar select {
+    margin-left: 10px;
+}
+.info a:not(:last-child)::after {
+    content: "/";
+    margin: 0 5px;
+    color: lightblue;
+}
+.footer-content3 {
+    width: 50%;
+    display: grid;
+    justify-content: space-between; 
+    justify-self: center;   
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative;
+    color: rgb(163, 193, 248)!important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: small;
+    margin-top: 60px;
+}
