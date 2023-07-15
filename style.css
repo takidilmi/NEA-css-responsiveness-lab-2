@@ -75,10 +75,10 @@ footer {
 }
 .contact .icons {
     display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;    
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;     
+    padding-right: 50px;
 }
-
 
 .contact .logo {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
@@ -143,13 +143,20 @@ a {
     text-decoration: none;
     margin-right: 10px;
 }
-
+/*
 .info a:hover {
     color: blue;
 }
 
 .info a:visited {
     color: inherit;
+}
+*/
+a:visited {
+    color: inherit;
+}
+a:hover {
+    color: blue !important;
 }
 
 .language-bar {
